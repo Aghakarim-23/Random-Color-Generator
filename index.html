@@ -4,61 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Generator</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-          sans-serif;
-        background-color: #2596be;
-      }
-      .colorGenerator {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
-      #hex {
-        display: block;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-        color: white;
-
-        font-size: 2rem;
-      }
-      .colorGenerator button {
-        width: 22rem;
-        height: 4rem;
-        border-radius: 8px;
-        border: 1px solid white;
-        background-color: transparent;
-        color: white;
-        cursor: pointer;
-        font-size: 1.3rem;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="colorGenerator">
       <span id="hex">#2596be</span>
       <button onclick="getNewColor()">Get a new COLOR</button>
     </div>
-
-    <script>
-      function getNewColor() {
-        var symbols, color;
-        symbols = "01234567890ABCDEF";
-        color = "#";
-
-        for (var i = 0; i < 6; i++) {
-          color = color + symbols[Math.floor(Math.random() * 16)];
-        }
-
-        document.body.style.background = color;
-        document.getElementById("hex").innerHTML = color;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
