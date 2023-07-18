@@ -1,3 +1,4 @@
 # Random-Color-Generator
-[demolink: Random Color Generator](https://tiny-jalebi-82e4f4.netlify.app/)
+[Demo link: https://random-color-generator-architect.netlify.app/
+)
 
