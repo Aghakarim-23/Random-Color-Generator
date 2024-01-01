@@ -4,7 +4,7 @@ function getNewColor() {
   color = "#";
 
   for (var i = 0; i < 6; i++) {
-    color = color + symbols[Math.floor(Math.random() * 16)];
+    color = color`` + symbols[Math.floor(Math.random() * 16)];
   }
 
   document.body.style.background = color;
